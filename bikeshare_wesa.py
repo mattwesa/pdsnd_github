@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 
     
-def import_data(filenames):
+def data_import(filenames):
     #Import Module
     ''' This module imports the data into a dataframe and creates new columns for the functions.
     Args: csv Files
@@ -221,7 +221,7 @@ def show_raw_data(df, column_count):
 def main():
     files_csv = Path.cwd().glob('*.csv')
 
-    df_original = import_data(files_csv)
+    df_original = data_import(files_csv)
     column_count_original = len(df_original.columns)
 
     df = extend_data(df_original)
