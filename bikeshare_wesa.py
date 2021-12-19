@@ -24,7 +24,7 @@ def data_import(filenames):
     
     return df
 
-def extend_data(df):
+def extend_dataframe(df):
     df = df.copy()
     # Data Frame Extention and Data Manipulation     
     df["Trip Duration"] = df["Trip Duration"] #.round().astype("int32")     # Round values to seconds
@@ -224,7 +224,7 @@ def main():
     df_original = data_import(files_csv)
     column_count_original = len(df_original.columns)
 
-    df = extend_data(df_original)
+    df = extend_dataframe(df_original)
 
     while True:
         df_filtered, filter_description = filter_data(df)
