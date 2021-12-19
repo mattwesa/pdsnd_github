@@ -1,17 +1,28 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+B I K E S H A R E   D A T A S E T   E X P L O R A T I O N
 
-### Date created
-Include the date you created this project and README file.
+Author: Matt Wesa 
+Year: 2021
 
-### Project Title
-Replace the Project Title
+### Programm
+Basic Data Exploration with pandas on Bikeshare Data
+A Python project using pandas to explore bikeshare data.
+This task was part of my UDACITY Programming for DATA SCIENCE from August 2021 until January 2022
 
 ### Description
-Describe what your project is about and what it does
+The program loads and merges the available data, after that the filtering section starts where the user can choose between city, user type, month, day of month and day of week.
+Once the filter section is completed, the data is been filtered and post-processed in the static section. 
+The statics show the following data:
+Most popular month, day of week, hour of the day
+Most popular start and end station and most popular trip
+Total and average trip duration
+Types of users (subscriber or customer) and gender (if available)
+The oldest, youngest and most common birth year (if available)
+Finally, the user can decide to have a closer look on the data and/or restart the filtering process.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Special thanks to my friend Christoph Lauterbach for helping me building this code and to my wife for giving me so much patience.
