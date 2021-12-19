@@ -1,7 +1,6 @@
 #Function IMPORT
 from datetime import datetime
 from pathlib import Path
-
 import pandas as pd
 
     
@@ -13,8 +12,6 @@ def import_data(filenames):
     print('Fetching data, please wait... \n'
           'and Yes I know, it takes a while \n'  )
 
-
-    #Data Grabber
 
     df = pd.DataFrame()
     for f in filenames:
@@ -36,16 +33,14 @@ def extend_data(df):
     pd.set_option('max_colwidth', 100)                                    #Column width extention -> for journey
 
     # Relabeling Columns
-#    df.columns = [col.replace(' ', '_').lower() for col in df.columns]
+    #    df.columns = [col.replace(' ', '_').lower() for col in df.columns]
     new_labels = []
     for col in df.columns:
         new_labels.append(col.replace(' ', '_').lower())
     df.columns = new_labels
     return df
 
-#filter_options = [
-#    ()
-#]
+
 
 def filter_by_choice(df, column, choices, readable, input_type_function):
     # column = 'city'
@@ -243,5 +238,3 @@ def main():
     
 if __name__ == "__main__":
     df = main()    
-
-
